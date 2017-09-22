@@ -19,5 +19,6 @@ public class RPCTest {
         }).start();
         HelloService service = RPCClient.getRemoteProxyObj(HelloService.class, new InetSocketAddress("localhost", 8088));
         System.out.println(service.sayHi("test"));
+        System.out.println(service.sayHi("test"));
     }
 }
